@@ -50,7 +50,39 @@
 			<h2>ПЕРФОРАТОРЫ</h2>
 		</div>
 		<section>
-			<!-- Здесь будет фильтр товаров-->
+			<h2>Фильтр</h2>
+			<form action="#" method="get">
+				<fieldset>
+					<legend>Производители:</legend>
+					<ul>
+						<li><input type="checkbox" name="BOSCH" id="BOSCH" checked>
+							<label for="BOSCH">BOSCH</label>
+						</li>
+						<li><input type="checkbox" name="Interskol" id="Interskol">
+							<label for="Interskol">ИНТЕРСКОЛ</label>
+						</li>
+						<li><input type="checkbox" name="MAKIta" id="MAKIta" checked>
+							<label for="MAKIta">MAKITA</label>
+						</li>
+						<li><input type="checkbox" name="Dewalt" id="Dewalt">
+							<label for="Dewalt">Dewalt</label>
+						</li>
+						<li><input type="checkbox" name="Hitachi" id="Hitachi">
+							<label for="Hitachi">Hitachi</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>ПИТАНИЕ:</legend>
+					<ul>
+						<li><input type="radio" name="product-group" value="shaving" id="filter-battery" checked>
+							<label for="filter-battery">Аккумуляторные</label></li>
+						<li><input type="radio" name="product-group" value="shaving" id="filter-rope">
+							<label for="filter-rope">Сетевые</label></li>
+					</ul>
+				</fieldset>
+				<button type="submit">Показать</button>
+			</form>
 		</section>
 		<section>
 			<!-- общий section для всех карточек каталога-->
@@ -131,6 +163,12 @@
 				Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
 				В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 		</section>
+		<div>
+			<!--всплывающее окно(уведомнение)-->
+			<p>Товар добавлен в корзину!</p>
+			<button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+			<button type="submit">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+		</div>
 	</main>
 	<footer>
 		<section>

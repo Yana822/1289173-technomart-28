@@ -101,6 +101,17 @@ img {
 	display: none;
 }
 
+.contact-company,
+.contact-company:hover {
+	font-size: 14px;
+	line-height: 18px;
+	background-color: var(--basic-red);
+}
+
+.contact-company:active {
+	background-color: var(--basic-dark-red);
+}
+
 .main-navigation {
 	/* навигация 1*/
 	font-style: normal;
@@ -112,11 +123,15 @@ img {
 }
 
 .main-logo,
-.main-logo:hover {
+.main-logo-interactive {
 	background-color: var(--basic-red);
 }
 
-.main-logo:active {
+.main-logo-interactive:hover {
+	background-color: var(--basic-red);
+}
+
+.main-logo-interactive:active {
 	background-color: var(--basic-dark-red);
 }
 
@@ -267,7 +282,18 @@ a.email:active {
 	color: var(--basic-smoky-white);
 }
 
+.footer-social-button a {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: flex;
+	background-color: var(--basic-night-blue);
+}
 
+.footer-social-button a:hover,
+.footer-social-button a:active {
+	background-color: var(--basic-red);
+}
 
 .about-company {
 	font-family: Cuprum;
@@ -293,11 +319,6 @@ a.email:active {
 	line-height: 24px;
 }
 
-.company-details-button {
-	font-size: 14px;
-	line-height: 18px;
-	background-color: var(--basic-red);
-}
 
 .main-footer {
 	font-family: Cuprum;
@@ -319,9 +340,10 @@ a.email:active {
 	font-size: 16px;
 	line-height: 18px;
 	background-color: var(--basic-dark-blue);
+	text-align: center;
 }
 
-.main-catalog-contentst {
+.main-catalog-content {
 	font-family: PT Sans;
 }
 
@@ -342,8 +364,9 @@ a.email:active {
 	line-height: 30px;
 }
 
-.catalog-title {
-	display: none;
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
 }
 
 .catalog-position {
@@ -361,7 +384,7 @@ p.old-price {
 	text-decoration-line: line-through;
 }
 
-.buy-goods-button {
+.price {
 	background-color: var(--basic-red);
 	color: var(--basic-white);
 }

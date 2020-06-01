@@ -10,7 +10,7 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-logo" href="index.html">
+			<a href="index.html" class="main-logo-interactive">
 				<img src="img/logo.svg" width="106" height="17" alt="Логотип «Техномарт»">
 			</a>
 			<form>
@@ -43,7 +43,7 @@
 			</ul>
 		</nav>
 	</header>
-	<main class="main-catalog-contentst">
+	<main class="main-catalog-content">
 		<ul class="catalog-navigation">
 			<li><a href="index.html">
 					<!--здесь будет иконка--></a></li>
@@ -103,7 +103,7 @@
 		</section>
 		<section class="catalog">
 			<!-- общий section для всех карточек каталога-->
-			<h2 class="catalog-title">Перфораторы</h2> <!-- скрытый заголовок-->
+			<h2 class="visually-hidden">Перфораторы</h2>
 			<ul class="catalog-items">
 				<li class="catalog-position">
 					<img src="img/BOSCH 6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -111,7 +111,7 @@
 					<p class="old-price">
 						30500 Р.
 					</p>
-					<button class="buy-goods-button" type="button">25500 Р.</button>
+					<span class="price">25500 Р.</span>
 				</li>
 				<li class="catalog-position">
 					<img src="img/BOSCH 6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -119,7 +119,7 @@
 					<p class="old-price">
 						30500 Р.
 					</p>
-					<button class="buy-goods-button" type="button">25500 Р.</button>
+					<span class="price">25500 Р.</span>
 				</li>
 				<!-- всплывающий эл-т
 				<li class="catalog-position">
@@ -129,7 +129,7 @@
 					<p class="old-price">
 						30500 Р.
 					</p>
-					<button class="buy-goods-button" type="button">25500 Р.</button>
+					<span class="price">25500 Р.</span>
 				</li> -->
 				<li class="catalog-position">
 					<img src="img/BOSCH 3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
@@ -137,7 +137,7 @@
 					<p class="old-price">
 						22500 Р.
 					</p>
-					<button class="buy-goods-button" type="button">15500 Р.</button>
+					<span class="price">15500 Р.</span>
 				</li>
 				<li class="catalog-position">
 					<img src="img/BOSCH 6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -145,33 +145,33 @@
 					<p class="old-price">
 						30500 Р.
 					</p>
-					<button class="buy-goods-button" type="button">25500 Р.</button>
+					<span class="price">25500 Р.</span>
 				</li>
 				<li class="catalog-position">
 					<img src="img/BOSCH2 000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
 					<h3 class="catalog-position-title">Перфоратор BOSCH BFG 2000</h3>
-					<button class="buy-goods-button" type="button">15500 Р.</button>
+					<span class="price">15500 Р.</span>
 				</li>
 				<li class="catalog-position">
-					<img src="img/BOSCH3 000.jpg0" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
+					<img src="img/BOSCH 3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
 					<h3 class="catalog-position-title">Перфоратор BOSCH BFG 3000</h3>
 					<p class="old-price">
 						22500 Р.
 					</p>
-					<button class="buy-goods-button" type="button">15500 Р.</button>
+					<span class="price">15500 Р.</span>
 				</li>
 				<li class="catalog-position">
-					<img src="img/BOSCH6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+					<img src="img/BOSCH 6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
 					<h3 class="catalog-position-title">Перфоратор BOSCH BFG 6000</h3>
 					<p class="old-price">
 						30500 Р.
 					</p>
-					<button class="buy-goods-button" type="button">25500 Р.</button>
+					<span class="price">25500 Р.</span>
 				</li>
 				<li class="catalog-position">
 					<img src="img/BOSCH2 000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
 					<h3 class="catalog-position-title">Перфоратор BOSCH BFG 2000</h3>
-					<button class="buy-goods-button" type="button">12500 Р.</button>
+					<span class="price">12500 Р.</span>
 				</li>
 			</ul>
 			<div>
@@ -199,7 +199,7 @@
 	<footer class="main-footer">
 		<section class="main-footer-nav">
 			<div>
-				<a class="main-logo">
+				<a href="index.html" class="main-logo-interactive">
 					<img src="img/logo.svg" width="106" height="17" alt="Логотип «Техномарт»">
 				</a>
 				<nav>
@@ -228,7 +228,7 @@
 		<section class="social-networks">
 			<p>© 2010–2019 Компания «Техномарт»<br>
 				Все права защищены</p>
-			<section>
+			<div>
 				<ul class="footer-social-button">
 					<li><a href="#">
 							<img src="img/icon-vk.svg" width="25" height="14" alt="Вконтакте"></a>
@@ -236,9 +236,10 @@
 					<li><a href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a></li>
 					<li><a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграмм"></a></li>
 				</ul>
-			</section>
+			</div>
 			<p><span>Обратная связь:<br></span><a class="email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 			<p><span>Разработано-<br></span><a class="email" href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+		</section>
 	</footer>
 </body>
 

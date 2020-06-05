@@ -43,103 +43,112 @@
 		</nav>
 	</header>
 	<main>
-		<section>
-			<ul>
-				<li>
+		<section class="company-services">
+			<ul class="company-services-list">
+				<li class="service-materials">
 					<p>Материалы</p>
-					<a href="">на любой вкус</a>
+					<a href="#">на любой вкус</a>
 					<img src="https://via.placeholder.com/150x100" width="44" height="65" alt="placeholder">
 				</li>
-				<li>
+				<li class="service-tools">
 					<p>Инструмент</p>
-					<a href="">НА ВСЕ СЛУЧАИ</a>
+					<a href="#">НА ВСЕ СЛУЧАИ</a>
 					<img src="https://via.placeholder.com/150x100" width="75" height="66" alt="placeholder">
 				</li>
-				<li>
+				<li class="service-technique">
 					<p>Техника</p>
-					<a href="">для стройки</a>
+					<a href="#">для стройки</a>
 					<img src="https://via.placeholder.com/150x100" width="78" height="62" alt="placeholder">
 				</li>
-				<li>
+				<li class="service-discount">
 					<p>Скидки 50% </p>
-					<a href="">На 350 ТОВАРОВ</a>
+					<a href="#">На 350 ТОВАРОВ</a>
 					<img src="https://via.placeholder.com/150x100" width="59" height="72" alt="placeholder">
 				</li>
-				<li>
+				<li class="service-delivery">
 					<p>Доставка</p>
-					<a href="">Бесплатно</a>
+					<a href="#">Бесплатно</a>
 					<img src="https://via.placeholder.com/150x100" width="78" height="63" alt="placeholder">
 				</li>
 			</ul>
-			<div>
-				<!-- 1-й слайд-->
-				<h2>Перфораторы</h2>
-				<p>Настоящие мужские игрушки</p>
-				<img src="img/slider-perforator.jpg" width="620" height="266" alt="Перфораторы">
-				<a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-			</div>
-			<div>
-				<!-- 2-й слайд-->
-				<h2>Дрели</h2>
-				<p>Соседям на радость!</p>
-				<img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
-				<a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-			</div>
+			<section class="gallery">
+				<div class="gallery-page">
+					<!-- 1-й слайд-->
+					<h2 class="gallery-page-title">Перфораторы</h2>
+					<p class="gallery-page-info">Настоящие мужские игрушки</p>
+				</div>
+				<figure class="gallery-content">
+					<img src="img/slider-perforator.jpg" width="620" height="266" alt="Перфораторы">
+					<a class="open-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+				</figure>
+				<div class="gallery-page">
+					<!-- 2-й слайд-->
+					<h2 class="gallery-page-title">Дрели</h2>
+					<p class="gallery-page-info">Соседям на радость!</p>
+				</div>
+				<figure class="gallery-content">
+					<img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
+					<a class="open-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+				</figure>
+			</section>
 		</section>
-		<article>
-			<p>Популярные товары</p>
-			<a href="">Все популярные товары</a>
-			<ul>
-				<li>
+		<section class="popular-goods">
+			<div class="popular-goods-container">
+				<h2 class="popular-goods-title">Популярные товары:</h2>
+				<a class="all-popular-products" href="">Все популярные товары</a>
+			</div>
+			<ul class="catalog-items">
+				<li class="catalog-position">
 					<img src="img/BOSCH 9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-					<h3>Перфоратор BOSCH BFG 9000</h3>
-					<p>
+					<h3 class="catalog-position-title">Перфоратор BOSCH BFG 9000</h3>
+					<p class="old-price">
 						32500 Р.
 					</p>
-					<button type="button">25500 Р.</button>
+					<span class="price">25500 Р.</span>
 				</li>
-				<li>
-					<img src="img/BOSCH 3000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 3000">
-					<h3>Перфоратор BOSCH BFG 3000</h3>
-					<p>
+				<li class="catalog-position">
+					<img src="img/BOSCH 3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+					<h3 class="catalog-position-title">Перфоратор BOSCH BFG 3000</h3>
+					<p class="old-price">
 						22500 Р.
 					</p>
-					<button type="button">15500 Р.</button>
+					<span class="price">15500 Р.</span>
 				</li>
-				<li>
-					<img src="img/BOSCH 6000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
-					<h3>Перфоратор BOSCH BFG 6000</h3>
-					<p>
+				<li class="catalog-position">
+					<img src="img/BOSCH 6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+					<h3 class="catalog-position-title">Перфоратор BOSCH BFG 6000</h3>
+					<p class="old-price">
 						30500 Р.
 					</p>
-					<button type="button">25500 Р.</button>
+					<span class="price">25500 Р.</span>
 				</li>
-				<li>
-					<img src="img/BOSCH2 000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 2000">
-					<h3>Перфоратор BOSCH BFG 2000</h3>
-					<button type="button">12500 Р.</button>
+				<li class="catalog-position">
+					<img src="img/BOSCH2 000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+					<h3 class="catalog-position-title">Перфоратор BOSCH BFG 2000</h3>
+					<span class="price">15500 Р.</span>
 				</li>
 			</ul>
-		</article>
-		<article>
-			<p>Популярные ПРОИзводители:</p>
-			<a href="">все производители</a>
-			<ul>
-				<li><img src="img/logo-bosch.png" width="126" height="37" alt="Логотип «Bosch»"></li>
-				<li><img src="img/logo-makita.png" width="123" height="40" alt="Логотип «Makita»"></li>
-				<li><img src="img/logo-DeValt.png" width="146" height="44" alt="Логотип «DeValt»"></li>
-				<li><img src="img/logo-Interskol.png" width="200" height="88" alt="Логотип «Интерскол»"></li>
-				<li><img src="img/logo-Hitachi.png" width="169" height="31" alt="Логотип «Hitachi»"></li>
-				<li><img src="img/logo-LG.png" width="121" height="73" alt="Логотип «LG»"></li>
-				<li><img src="img/logo-AEG.png" width="151" height="96" alt="Логотип «AEG»"></li>
-				<li><img src="img/logo-Metabo.png" width="204" height="69" alt="Логотип «Metabo»"></li>
-			</ul>
-		</article>
-		<section>
+		</section>
+		<section class="popular-manufacturers">
+			<div class="popular-manufacturers-container">
+				<h2 class="popular-manufacturers-title">Популярные производители:</h2>
+				<a class="all-popular-manufacturers" href="">все производители</a>
+				<ul class="popular-manufacturers-list">
+					<li><img src="img/logo-bosch.png" width="126" height="37" alt="Логотип «Bosch»"></li>
+					<li><img src="img/logo-makita.png" width="123" height="40" alt="Логотип «Makita»"></li>
+					<li><img src="img/logo-DeValt.png" width="146" height="44" alt="Логотип «DeValt»"></li>
+					<li><img src="img/logo-Interskol.png" width="200" height="88" alt="Логотип «Интерскол»"></li>
+					<li><img src="img/logo-Hitachi.png" width="169" height="31" alt="Логотип «Hitachi»"></li>
+					<li><img src="img/logo-LG.png" width="121" height="73" alt="Логотип «LG»"></li>
+					<li><img src="img/logo-AEG.png" width="151" height="96" alt="Логотип «AEG»"></li>
+					<li><img src="img/logo-Metabo.png" width="204" height="69" alt="Логотип «Metabo»"></li>
+				</ul>
+		</section>
+		<section class="service">
 			<h2>Сервисы</h2>
 			<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-			<ul>
+			<ul class="service-list">
 				<li><a href="">Доставка</a></li>
 				<li><a href="">Гарантия</a></li>
 				<li><a href="">Кредит</a></li>
@@ -149,7 +158,7 @@
 				к вашему подъезду совершенно бесплатно!<br>
 				Ведь мы неплохо заработаем,<br>
 				поднимая его на ваш этаж!</p>
-			<img src="https://via.placeholder.com/150x100" width="468" height="271" alt="placeholder">
+			<img src="img/icon-truck.png" width="468" height="271" alt="placeholder">
 		</section>
 		<section class="about-company">
 			<h2 class="about-company-headline">КОМПАНИЯ «ТЕХНОМАРТ»</h2>

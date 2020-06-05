@@ -44,31 +44,29 @@
 		</nav>
 	</header>
 	<main class="main-catalog-content">
-		<ul class="catalog-navigation">
+		<ul class="breadcrumbs">
 			<li><a href="index.html">
 					<!--здесь будет иконка--></a></li>
 			<li><a href="catalog.html">КАТАЛОГ</a></li>
-			<li><a href="">ИНСТРУМЕНТ</a></li>
-			<li>ПЕРФОРАТОРЫ</li>
+			<li><a href="#">ИНСТРУМЕНТ</a></li>
+			<li class="breadcrumbs-current">ПЕРФОРАТОРЫ</li>
 		</ul>
 		<div class="catalog-section">
 			<h2 class="catalog-section-title">ПЕРФОРАТОРЫ</h2>
 		</div>
-		<section>
-			<div>
-				<h2>ФИЛЬТР:</h2>
-			</div>
-			<div>
+		<section class="filters">
+			<h2>ФИЛЬТР:</h2>
+			<div class="catalog-sorting">
 				<p>СОРТИРОВКА:</p>
 				<a href="#">ПО ЦЕНЕ</a>
-				<a href="">ПО ТИПУ</a>
-				<a href="">ПО ФУНКЦИОНАЛУ</a>
+				<a href="#">ПО ТИПУ</a>
+				<a href="#">ПО ФУНКЦИОНАЛУ</a>
 			</div>
 			<div>
 				<label for="price">Цена:</label><br>
 				0 <input type="range" id="price" name="price" min="0" max="300" step="1"> 300
 			</div>
-			<form action="#" method="get">
+			<form class="filter" action="#" method="get">
 				<fieldset>
 					<legend>Производители:</legend>
 					<ul>
@@ -98,7 +96,7 @@
 							<label for="filter-rope">Сетевые</label></li>
 					</ul>
 				</fieldset>
-				<button type="submit">Показать</button>
+				<button class="filter-show" type="submit">Показать</button>
 			</form>
 		</section>
 		<section class="catalog">
@@ -174,16 +172,14 @@
 					<span class="price">12500 Р.</span>
 				</li>
 			</ul>
-			<div>
-				<ul>
-					<li>1</li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">СЛЕДУЮЩАЯ</a></li>
-				</ul>
+			<div class="catalog-pages">
+				<span class="catalog-pages-active">1</span>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#" class="catalog-paginator-next">Следующая</a>
 			</div>
 		</section>
-		<section>
+		<section class="about-perforator">
 			<h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
 			<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
 				Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>

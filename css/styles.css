@@ -1,6 +1,11 @@
+body {
+	font-family:"PT Sans","Cuprum",sans-serif;
+}
+
 @font-face {
-	font-family: "ptsans";
-	src: url("fonts/ptsans.woff2") format("woff2"),
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	src: local("PT Sans"),
+		url("fonts/ptsans.woff2") format("woff2"),
 		url("fonts/ptsans.woff") format("woff");
 
 	font-weight: normal;
@@ -8,8 +13,9 @@
 }
 
 @font-face {
-	font-family: "ptsans";
-	src: url("fonts/ptsansbold.woff2") format("woff2"),
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	src: local("PT Sans"),
+		url("fonts/ptsansbold.woff2") format("woff2"),
 		url("fonts/ptsansbold.woff") format("woff");
 
 	font-weight: bold;
@@ -17,32 +23,33 @@
 }
 
 @font-face {
-	font-family: "cuprum";
-	src: url("fonts/cuprum.woff2") format("woff2"),
+	font-family: "Cuprum", "Verdana", sans-serif;
+	src: local("Cuprum"), url("fonts/cuprum.woff2") format("woff2"),
 		url("fonts/cuprum.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "cuprum";
-	src: url("fonts/cuprumbold.woff2") format("woff2"),
+	font-family: "Cuprum", "Verdana", sans-serif;
+	src: local("Cuprum"),
+		url("fonts/cuprumbold.woff2") format("woff2"),
 		url("fonts/cuprumbold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "cuprum";
-	src: url("fonts/cuprumbolditalic.woff2") format("woff2"),
+	font-family: "Cuprum", "Verdana", sans-serif;
+	src: local("Cuprum"), url("fonts/cuprumbolditalic.woff2") format("woff2"),
 		url("fonts/cuprumbolditalic.woff") format("woff");
 	font-weight: bold;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: "cuprum";
-	src: url("fonts/cuprumitalic.woff2") format("woff2"),
+	font-family: "Cuprum", "Verdana", sans-serif;
+	src: local("Cuprum"), url("fonts/cuprumitalic.woff2") format("woff2"),
 		url("fonts/cuprumitalic.woff") format("woff");
 	font-weight: normal;
 	font-style: italic;
@@ -88,7 +95,7 @@
 }
 
 body {
-	min-width: 960px;
+	min-width: 940px;
 	margin: 0;
 	padding: 0;
 	background-position: top center;
@@ -113,7 +120,6 @@ img {
 .main-header {
 	font-family: cuprum;
 	background-color: var(--basic-light-grey);
-
 }
 
 .pop-up-checkout {
@@ -145,19 +151,24 @@ img {
 	background-color: var(--basic-dark-red);
 }
 
+.contact-company {
+	margin-top: 25px;
+}
+
 .main-navigation {
-	/* навигация 1*/
+
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 24px;
 	color: var(--basic-white);
-	background-color: var(--basic-dark-blue);
 }
 
 .main-logo,
 .main-logo-interactive {
 	background-color: var(--basic-red);
+	width: 220px;
+	height: 47px;
 }
 
 .main-logo-interactive:hover {
@@ -194,6 +205,10 @@ img {
 
 .basket-button {
 	/*добавить иконку и цвет белый*/
+}
+
+.basket-button-catalog {
+	background-color: var(--basic-red);
 }
 
 .checkout-button,
@@ -253,10 +268,8 @@ img {
 	font-size: 18px;
 	line-height: 24px;
 	background-color: var(--basic-blue);
+
 }
-
-
-
 
 .site-navigation a:hover {
 	background-color: var(--basic-dark-blue);
@@ -265,7 +278,6 @@ img {
 .site-navigation a:active {
 	background-color: var(--basic-night-blue);
 }
-
 
 .products-navigation a,
 a.email {
@@ -308,6 +320,26 @@ a.email:active {
 	color: var(--basic-smoky-white);
 }
 
+.main-footer-nav-wrapper {
+	width: 940px;
+	display: inline-block;
+	justify-content: center;
+}
+
+.footer-navigation {
+	width: 940px;
+	margin: 0;
+	padding: 0;
+	min-height: 42px;
+	align-items: center;
+}
+
+.footer-navigation li,
+.products-navigation li {
+	display: inline-block;
+}
+
+
 .footer-social-button a {
 	width: 44px;
 	height: 44px;
@@ -322,25 +354,33 @@ a.email:active {
 }
 
 .about-company {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 191px;
 	font-family: Cuprum;
 	font-style: normal;
 	font-weight: normal;
 	color: var(--basic-black);
-	text-align: center;
+	text-align: left;
 }
 
 .about-company-headline {
 	font-size: 30px;
 	line-height: 30px;
+	margin-bottom: 35px;
 }
 
 .about-company-info {
 	font-family: PT Sans;
 	font-size: 13px;
 	line-height: 24px;
+	margin: 0;
+	margin-bottom: 38px;
 }
 
 .list-of-services {
+	margin: 0;
+	padding: 0;
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -356,13 +396,9 @@ a.email:active {
 	color: var(--basic-white);
 }
 
-.main-footer-nav {
-	background-color: var(--basic-blue);
-}
-
-
-
 .social-networks {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	font-size: 16px;
 	line-height: 18px;
 	background-color: var(--basic-dark-blue);
@@ -399,7 +435,12 @@ a.email:active {
 	background-color: var(--basic-white);
 }
 
-.catalog-position-title {
+.catalog-position-title h3 {
+
+	margin-top: 28px;
+	margin-right: 17px;
+	margin-bottom: 7px;
+	margin-left: 18px;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
@@ -713,4 +754,192 @@ button.buy-button:active {
 	line-height: 18px;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
+}
+
+.main-header,
+.main-navigation,
+.navigation,
+.site-navigation {
+	display: flex;
+}
+
+.page {
+	height: 100%;
+}
+
+.page-body {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
+}
+
+.main-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-navigation-wrapper {
+	width: 100%;
+	margin-bottom: 46px;
+	background-color: var(--basic-dark-blue);
+	display: flex;
+	justify-content: center;
+}
+
+.main-navigation {
+	width: 940px;
+	margin: 0;
+	padding: 0;
+	min-height: 42px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.navigation {
+	margin: 0;
+	padding: 0;
+	min-height: 60px;
+	align-items: center;
+	margin-top: 47px;
+	margin-bottom: 60px;
+
+}
+
+.site-navigation {
+	width: 100%;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.header-contact-information {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 69px, 93px;
+	margin: 0;
+	padding: 0;
+}
+
+.about-company-wrapper,
+.contact-company-wrapper {
+
+	justify-content: flex-start;
+	margin-bottom: 70px;
+	margin-top: 73px;
+}
+
+.about-company-wrapper {
+	width: 457px;
+}
+
+.contact-company-wrapper {
+	width: 300px;
+}
+
+.indent {
+	margin-bottom: 0;
+}
+
+.main-footer-nav-wrapper {
+	background-color: var(--basic-blue);
+
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
+.main-footer-navigation {
+	width: 940px;
+	margin: 0;
+	padding: 0;
+	min-height: 64px;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+}
+
+.catalog-and-filter {
+	display: grid;
+	grid-template-columns: 220px 1fr;
+	align-content: start;
+}
+
+.catalog-section-title,
+.breadcrumbs-wrapper {
+	grid-column: 1 / -1;
+
+}
+
+.breadcrumbs-wrapper {
+	margin-bottom: 25px;
+}
+
+.breadcrumbs {
+	padding: 0;
+	margin: 0;
+}
+
+.catalog-section-title {
+	margin: 0;
+	margin-bottom: 52px;
+}
+
+.catalog-items {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 18px;
+	list-style: none;
+}
+
+.catalog-position {
+	width: 215px;
+	min-height: 317px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.catalog-position :nth-child(3n) {
+	margin-right: 0;
+}
+
+.catalog-position img {
+	width: 144px;
+	height: 128px;
+	margin: 0;
+}
+
+.price {
+	display: flex;
+	margin-bottom: 31px;
+}
+
+.filter fieldset {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.filter fieldset:first-child {
+	margin-bottom: 46px;
+}
+
+.filter legend {
+	margin-bottom: 20px;
+	line-height: 30px;
+}
+
+.filter ul {
+	padding: 0;
+	margin: 0;
+	line-height: 20px;
 }

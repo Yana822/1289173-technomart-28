@@ -483,11 +483,33 @@ button.buy-button:hover {
 button.buy-button:active {
 	background-color: var(--basic-maple);
 }*/
+.company-services-wrapper {
+	margin-bottom: 59px;
+}
 
+.company-services-grid {
 
-.company-services {
 	font-family: Cuprum;
 	color: var(--basic-white);
+
+}
+
+.grid-company-services {
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	grid-template-rows: 123px 123px 123px;
+	grid-gap: 20px;
+
+}
+
+.grid-company-services li.gallery {
+	grid-column: 1 / span 2;
+	grid-row: 2 / span 3;
+}
+
+.company-services-list {
+	margin: 0;
+	padding: 0;
 }
 
 .company-services-list,
@@ -497,22 +519,32 @@ button.buy-button:active {
 
 .service-materials {
 	background-color: var(--basic-orange);
+	grid-column-start: 1;
+	grid-row-start: 1;
 }
 
 .service-tools {
 	background-color: var(--basic-light-blue);
+	grid-column-start: 2;
+	grid-row-start: 1;
 }
 
 .service-technique {
 	background-color: var(--basic-lilac);
+	grid-column-start: 3;
+	grid-row-start: 1;
 }
 
 .service-discount {
 	background-color: var(--basic-light-green);
+	grid-column-start: 3;
+	grid-row-start: 2;
 }
 
 .service-delivery {
 	background-color: var(--basic-light-orange);
+	grid-column-start: 3;
+	grid-row-start: 3;
 }
 
 .service-materials a,
@@ -528,7 +560,7 @@ button.buy-button:active {
 .service-technique a:hover,
 .service-discount a:hover,
 .service-delivery a:hover {
-	background-color: var(--basic-transparent-grey);
+background-color: var(--basic-transparent-grey);
 }
 
 .service-materials a:active,
@@ -555,16 +587,24 @@ button.buy-button:active {
 	text-transform: uppercase;
 }
 
+.company-services-list li {
+	width: 300px;
+	min-height: 123px;
+}
+
 .gallery-page {
 	background-color: var(--basic-transparent-silver);
+	width: 620px;
+	height: 104px;
 }
+
 
 .gallery-page-title {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 36px;
-
+	margin: 0;
 }
 
 .gallery-page-info {
@@ -572,7 +612,7 @@ button.buy-button:active {
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 24px;
-
+	margin: 0;
 }
 
 .popular-goods-title,
@@ -589,6 +629,25 @@ button.buy-button:active {
 .popular-goods-container,
 .popular-manufacturers-container {
 	background-color: var(--basic-flaxen);
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.popular-manufacturers-list {
+	display: grid;
+	grid-template-columns: 220px 220px 220px 220px;
+	grid-template-rows: 145px 145px;
+	grid-gap: 20px;
+}
+
+.popular-manufacturers {
+	margin-bottom: 71px;
+}
+
+ul.popular-manufacturers-list {
+	margin: 0;
+	padding: 0;
 }
 
 .popular-manufacturers-list li {
@@ -614,7 +673,25 @@ button.buy-button:active {
 	background-color: var(--basic-smoky-white);
 }
 
+.service-information {
+	display: block;
+	width: 390px;
+	min-height: 238px;
+	text-align: left;
+}
+
+.service-information h2 {
+	margin: 0;
+}
+
+.service-list {
+	margin: 0;
+	padding: 0;
+	width: 240px;
+}
+
 .service h2 {
+
 	font-family: Cuprum;
 	font-style: normal;
 	font-weight: normal;
@@ -641,6 +718,10 @@ button.buy-button:active {
 	background-color: var(--basic-blue);
 }
 
+.service-list-wrapper {
+	display: flex;
+}
+
 .service-list a:hover {
 	background-color: var(--basic-dark-blue);
 }
@@ -650,8 +731,14 @@ button.buy-button:active {
 	color: var(--basic-dark-blue);
 }
 
-.about-perforator {
+.about-perforator-wrapper {
 	background-color: var(--basic-smoky-white);
+}
+
+.about-perforator {
+	display: block;
+	min-height: 262px;
+	text-align: left;
 }
 
 .about-perforator p {
@@ -771,6 +858,10 @@ button.buy-button:active {
 	display: flex;
 }
 
+.main-header {
+	margin-bottom: 59px;
+}
+
 .page {
 	height: 100%;
 }
@@ -817,7 +908,6 @@ button.buy-button:active {
 	min-height: 60px;
 	align-items: center;
 	margin-bottom: 60px;
-
 }
 
 .site-navigation {
@@ -837,7 +927,6 @@ button.buy-button:active {
 
 .about-company-wrapper,
 .contact-company-wrapper {
-
 	justify-content: flex-start;
 	margin-bottom: 70px;
 	margin-top: 73px;
@@ -857,9 +946,7 @@ button.buy-button:active {
 
 .main-footer-nav-wrapper {
 	background-color: var(--basic-blue);
-
 	width: 100%;
-
 	display: flex;
 	justify-content: center;
 }

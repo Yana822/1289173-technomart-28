@@ -8,9 +8,10 @@
 </head>
 
 <body class="page-body">
+
 	<header class="main-header">
 		<div class="main-navigation-wrapper">
-			<nav class="main-navigation">
+			<nav class="main-navigation container">
 				<a class="main-logo">
 					<img src="img/logo.svg" width="106" height="17" alt="Логотип «Техномарт»">
 				</a>
@@ -85,20 +86,19 @@
 							<h2 class="gallery-page-title">Перфораторы</h2>
 							<p class="gallery-page-info">Настоящие мужские игрушки</p>
 						</div>
-						<figure class="gallery-content">
-							<img src="img/slider-perforator.jpg" width="620" height="266" alt="Перфораторы">
-							<a class="open-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-						</figure>
+
+						<img src="img/slider-perforator.jpg" width="620" height="266" alt="Перфораторы">
+						<a class="open-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+
 						<!--
 					<div class="gallery-page">
 						 2-й слайд
 						<h2 class="gallery-page-title">Дрели</h2>
 						<p class="gallery-page-info">Соседям на радость!</p>
 					</div>
-					<figure class="gallery-content">
+					
 						<img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
-						<a class="open-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-					</figure>-->
+						<a class="open-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>-->
 					</li>
 				</ul>
 			</div>
@@ -107,7 +107,7 @@
 					<h2 class="popular-goods-title">Популярные товары:</h2>
 					<a class="all-popular-products" href="">Все популярные товары</a>
 				</div>
-				<ul class="catalog-items">
+				<ul class="catalog-items catalog-items-grid-homepage">
 					<li class="catalog-position">
 						<img src="img/BOSCH 9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
 						<h3 class="catalog-position-title">Перфоратор BOSCH BFG 9000</h3>
@@ -144,7 +144,7 @@
 					<h2 class="popular-manufacturers-title">Популярные производители:</h2>
 					<a class="all-popular-manufacturers" href="">все производители</a>
 				</div>
-				<ul class="popular-manufacturers-list">
+				<ul class="popular-manufacturers-list popular-manufacturers-list-grid">
 					<li><img src="img/logo-bosch.png" width="126" height="37" alt="Логотип «Bosch»"></li>
 					<li><img src="img/logo-makita.png" width="123" height="40" alt="Логотип «Makita»"></li>
 					<li><img src="img/logo-DeValt.png" width="146" height="44" alt="Логотип «DeValt»"></li>
@@ -231,7 +231,7 @@
 	</main>
 	<footer class="main-footer">
 		<div class="main-footer-nav-wrapper">
-			<nav class="main-footer-navigation">
+			<nav class="main-footer-navigation container">
 				<a class="main-logo">
 					<img src="img/logo.svg" width="106" height="17" alt="Логотип «Техномарт»">
 				</a>
@@ -245,7 +245,7 @@
 			</nav>
 		</div>
 		<div class="main-footer-nav-wrapper">
-			<nav class="main-footer-navigation">
+			<nav class="main-footer-navigation container">
 				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 					+7 (812) 555-05-55</p>
 				<ul class="products-navigation">
@@ -257,28 +257,31 @@
 			</nav>
 		</div>
 		<section class="social-networks">
-			<div class="container">
-				<div class="social-networks-grid">
-					<div>
-						<p>© 2010–2019 Компания «Техномарт»<br>
-							Все права защищены</p>
-					</div>
-					<div>
-						<ul class="footer-social-button">
-							<li><a href="#">
-									<img src="img/icon-vk.svg" width="25" height="14" alt="Вконтакте"></a>
-							</li>
-							<li><a href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a></li>
-							<li><a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграмм"></a></li>
-						</ul>
-					</div>
-					<div class="feedback">
-						<p><span>Обратная связь:<br></span><a class="email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-						<p><span>Разработано-<br></span><a class="email" href="https://htmlacademy.ru">htmlacademy.ru</a></p>
-					</div>
+
+			<div class="social-networks-grid container">
+				<div>
+					<p>© 2010–2019 Компания «Техномарт»<br>
+						Все права защищены</p>
+				</div>
+				<div>
+					<ul class="footer-social-button">
+						<li><a href="#">
+								<img src="img/icon-vk.svg" width="25" height="14" alt="Вконтакте"></a>
+						</li>
+						<li><a href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a></li>
+						<li><a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграмм"></a></li>
+					</ul>
+				</div>
+				<div class="feedback">
+					<p><span>Обратная связь:<br></span><a class="email"
+							href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+					<p><span>Разработано-<br></span><a class="email" href="https://htmlacademy.ru">htmlacademy.ru</a>
+					</p>
 				</div>
 			</div>
+
 		</section>
 	</footer>
-  </body>
+</body>
+
 </html>
